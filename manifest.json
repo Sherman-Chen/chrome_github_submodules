@@ -1,0 +1,23 @@
+{
+    "name": "github submodules support",
+    "version": "1.0",
+    "description": "github submodules support",
+    "permissions": ["activeTab","storage","declarativeContent"],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "images/ico.png"
+      }
+    },
+    "icons": {
+      "128": "images/ico.png"
+    },
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["https://*.github.com/*"],
+        "js": ["contentScript.js"],
+        "run_at": "document_start"
+      }
+    ]
+  }

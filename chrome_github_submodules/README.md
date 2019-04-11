@@ -1,0 +1,2 @@
+# chrome_github_submodules
+chrome扩展以支持github对于submodule的显示
